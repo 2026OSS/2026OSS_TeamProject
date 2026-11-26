@@ -1,27 +1,119 @@
-<h1 align="center">Chill 💿 Choub</h1>
+# 🎵 한동 뮤직 (Handong Music)
+
+함께 듣고, 함께 만들고, 함께 공유하는 우리 공동체의 플레이리스트
+
+한동 뮤직은 한동대학교 학생들이 공동체별로 플레이리스트를 생성하고, 음악을 자유롭게 추가하며 서로의 음악 취향을 공유할 수 있는 웹 서비스입니다.
+
+기존 React 기반 Lo-Fi 음악 플레이어 오픈소스를 바탕으로, 개인 음악 감상을 넘어 공동체 중심의 음악 공유 플랫폼으로 확장하는 것을 목표로 합니다.
+
+🔗 배포 사이트 : https://2026-oss-team-project.vercel.app
 
 
-<p align="center">🎵 Your favorite LoFi Music Player🎧</p>
-<p align="center">⭐⭐⭐⭐⭐</a></p>
+## 📌 프로젝트 소개
 
-<br>
+한동대학교에는 RC, 동아리, 팀 등 다양한 공동체가 존재합니다.
 
-- A Responsive Web-App to enjoy and chill Lofi Beats.
-- Developed using ReactJS.
-- Beautiful styling using SASS.
-- Music Collected manually from [ChillHop](https://chillhop.com/) and stored in [playlist.js](/src/playlist.js).
-- Deployed on Vercel.
-- [Live DEMO](https://chill-choub.vercel.app/)
+한동 뮤직은 이러한 공동체 구성원들이 하나의 플레이리스트를 함께 관리하면서 음악을 추천하고 공유할 수 있도록 기획되었습니다.
 
-## Screenshots :
+### 프로젝트 목표
 
-<br>
-<p align="center">
-  <img  src="screenshots/player.PNG">
-  <img  src="screenshots/library.PNG">
-</p>
+공동체 기반 음악 공유: 같은 그룹에 속한 사용자들이 플레이리스트를 공동으로 관리
 
----
+협업형 플레이리스트: 그룹 구성원 누구나 음악을 추가하고 공유
 
-<p align="right">
-<a href="https://www.buymeacoffee.com/choubari" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-orange.png" alt="Buy Me A Coffee" width="140px" heigh="50px" ></a>
+음악 취향 공유: 서로 좋아하는 음악을 추천하고 새로운 음악 발견
+
+간편한 음악 감상: 외부 음악 API를 활용한 미리듣기 기능 제공
+
+## ✨ 주요 기능
+
+1. Google 로그인
+
+Google 계정을 이용한 사용자 로그인
+
+로그인한 사용자별 그룹 관리
+
+사용자 인증을 기반으로 공동체 서비스 이용
+
+2. 공동체 그룹 관리
+
+자신이 속한 그룹 목록 조회 및 선택
+
+새로운 공동체 그룹 생성
+
+그룹 생성 시 이름 등 기본 정보 입력
+
+그룹별 독립적인 플레이리스트 관리
+
+3. 플레이리스트 관리
+
+그룹별 플레이리스트 목록 조회
+
+새로운 플레이리스트 생성
+
+기존 플레이리스트 정보 수정 및 삭제
+
+그룹 구성원들과 플레이리스트 공동 관리
+
+4. 음악 관리 및 공유
+
+플레이리스트에 등록된 음악 목록 조회
+
+외부 음악 API를 통한 음악 검색
+
+원하는 음악을 플레이리스트에 추가
+
+플레이리스트 내 음악 수정 및 삭제
+
+같은 그룹 구성원 간 음악 공유
+
+5. 음악 재생
+
+음악 재생 및 일시정지
+
+이전 곡 / 다음 곡 이동
+
+음악 재생 위치 확인 및 조절
+
+셔플(Shuffle) 재생
+
+반복(Repeat) 재생
+
+볼륨 조절
+
+다크모드 지원
+
+음악 재생 안내
+
+외부 음악 API의 제공 범위 및 라이선스 제약으로 인해 전체 음원 재생 대신 약 1분 미리듣기를 목표로 합니다. 실제 재생 가능 시간과 지원 여부는 선정된 API에 따라 달라질 수 있습니다.
+
+## 🔄 서비스 이용 흐름
+
+**STEP 1**. 로그인
+
+Google 계정으로 로그인하여 서비스를 시작합니다.
+
+**STEP 2**. 공동체 그룹 선택 또는 생성
+
+로그인 후 기존에 속한 그룹을 선택하거나 새로운 그룹을 생성할 수 있습니다.
+
+그룹 생성 시 그룹 이름 및 필요한 정보를 입력합니다.
+
+**STEP 3**. 플레이리스트 선택 및 관리
+
+선택한 그룹에 등록된 플레이리스트 목록을 확인합니다.
+
+사용자는 기존 플레이리스트를 선택하거나 새로운 플레이리스트를 생성할 수 있으며, 플레이리스트 정보의 수정 및 삭제도 가능합니다.
+
+**STEP 4**. 음악 추가 및 공유
+
+플레이리스트에 등록된 음악을 확인하고, 원하는 음악을 검색하여 추가할 수 있습니다.
+
+같은 그룹에 속한 사용자들은 음악을 함께 관리하며 서로의 취향을 공유할 수 있습니다.
+
+**STEP 5**. 음악 감상
+
+플레이리스트에서 원하는 음악을 선택하면 음악 플레이어로 미리듣기를 이용할 수 있습니다.
+
+반복 재생, 셔플 재생, 볼륨 조절 등 다양한 플레이어 기능을 제공합니다.
+
